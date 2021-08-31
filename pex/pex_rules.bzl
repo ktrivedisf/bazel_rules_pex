@@ -442,11 +442,10 @@ _pytest_pex_test = rule(
         "runner": attr.label(
             executable = True,
             mandatory = True,
-            cfg = "data",
+            cfg = "target",
         ),
         "launcher_template": attr.label(
-            allow_files = True,
-            single_file = True,
+            allow_single_files = True,
             default = Label("//pex:testlauncher.sh.template"),
         ),
     }),
