@@ -351,8 +351,7 @@ def _dmerge(a, b):
 
 
 pex_bin_attrs = _dmerge(pex_attrs, {
-    "main": attr.label(allow_files = True,
-                       single_file = True),
+    "main": attr.label(allow_files = True),
     "entrypoint": attr.string(),
     "interpreter": attr.string(),
     "pex_use_wheels": attr.bool(default=True),
