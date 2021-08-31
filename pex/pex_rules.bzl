@@ -331,7 +331,7 @@ pex_attrs = {
 
     # required for pex_library targets in third_party subdirs
     # but theoretically a common attribute for all rules
-    "licenses": attr.license(),
+    #"licenses": attr.license(),
 
     # Used by pex_binary and pex_*test, not pex_library:
     "_pexbuilder": attr.label(
