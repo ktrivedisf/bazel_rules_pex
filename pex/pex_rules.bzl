@@ -327,8 +327,7 @@ pex_attrs = {
     "disable_cache": attr.bool(default=False),
     "repos": attr.label_list(flags = ["DIRECT_COMPILE_TIME_INPUT"],
                             allow_files = repo_file_types),
-    "data": attr.label_list(allow_files = True,
-                            cfg = "data"),
+    "data": attr.label_list(allow_files = True),
 
     # required for pex_library targets in third_party subdirs
     # but theoretically a common attribute for all rules
